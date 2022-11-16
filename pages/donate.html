@@ -89,7 +89,7 @@ a.active, a:hover {
     display: none;
 }
 
-/* RESPONSIVIDADE  TABLETS E SMARTPHONES */
+/*  RESPONSIVIDADE */
 
 @media (max-width: 883px){
     .buton-btn{
@@ -126,7 +126,48 @@ a.active, a:hover {
     #check:checked ~ ul{
         left: 0;
     }
+
+
 }
+
+/*  CORPO DA PÁGINA*/
+
+.container .img-dnt img {
+    width: 500px;
+}
+
+.container {
+    display: flex;
+}
+
+.img-dnt {
+    margin: 50px;
+}
+.pay-info {
+    margin: 40px 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.pay-info p {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+.container .pay-info .qr-code img {
+    width: 340px;
+    margin: 0px 0px 20px 137px;
+}
+
 
     </style>
 
@@ -146,56 +187,59 @@ a.active, a:hover {
         </ul>
     </nav>
 
-    <main>
-        <div class="container-dn">
-            <img src="../assets/img/Charity.jpg" alt="imagem de caridade">
+        <div class="container">
+
+            <div class="img-dnt">
+                <img src="../assets/img/Charity.jpg" alt="imagem de caridade">
+            </div>
+    
+    
+            <div class="pay-info">
+                
+                <div class="title-info">
+                    <h3>
+                        como ajudar?
+                    </h3>
+                    <h1>
+                        DOAÇÃO VIA PIX
+                    </h1>
+                </div>
+                   
+                <div class="content.info">
+                    <p>
+                        Para fazer uma doação para manter o site usando o Pix basta acessar sua conta e inserir a chave:
+                    </p>
+                    <h2>
+                        <strong>exemplo@meusite.org.br</strong> 
+                    </h2>
+                    <p>
+                        Ou ler o QR Code diretamente do aplicativo do seu banco:
+                    </p>
+                </div>
+                
+                <div class="qr-code">
+                    <img src="../assets/img/qr-code.jpg" alt="">
+                </div>
+    
+                <div class="content.info">
+                    <p>
+                        Esse novo meio de pagamento instantâneo pode ser usado para transferências bancárias, pagamentos e também é uma ótima alternativa para quem quer fazer doações.
+                    </p>
+                    <p>
+                        Pessoas físicas e jurídicas podem fazer transações de valores em até 10 segundos, 24h por dia, todos os dias da semana.
+                    </p>
+                    <p>
+                        O Pix dispensa o processo de informar todos os dados bancários e pessoais para fazer e receber uma transferência ou pagamento, o que simplifica as doações para manter sites como este que investem na educação e produtividade do indivíduo. Vamos juntos construir um futuro melhor para todos.
+                    </p>
+                </div>            
+                
+    
+            </div>
+
         </div>
-
-        <div class="ad-senses">
-
-        </div>
-
-        <div class="pay-info">
-            <div class="title">
-                <h3>
-                    como ajudar
-                </h3>
-                <h1>
-                    doação via pix
-                </h1>
-            </div>
-
-            <div class="content">
-                <p>
-                    Para fazer uma doação para manter o site usando o Pix basta acessar sua conta e inserir a chave:
-                </p>
-                <p>
-                    exemplo@meusite.org.br
-                </p>
-                <p>
-                    Ou ler o QR Code diretamente do aplicativo do seu banco:
-                </p>
-
-            </div>
-
-            <div class="qr-code">
-                <img src="../assets/img/qr-code.jpg" alt="">
-            </div>
-
-            <div class="content">
-                <p>
-                    Esse novo meio de pagamento instantâneo pode ser usado para transferências bancárias, pagamentos e também é uma ótima alternativa para quem quer fazer doações.
-                </p>
-                <p>
-                    Pessoas físicas e jurídicas podem fazer transações de valores em até 10 segundos, 24h por dia, todos os dias da semana.
-                </p>
-                <p>
-                    O Pix dispensa o processo de informar todos os dados bancários e pessoais para fazer e receber uma transferência ou pagamento, o que simplifica as doações para manter sites como este que investem na educação e produtividade do indivíduo. Vamos juntos construir um futuro melhor para todos.
-                </p>
-            </div>
-
-        </div>
-    </main>
+    
+        
+   
 
 </body>
 </html>
