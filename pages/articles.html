@@ -23,6 +23,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: #141313;
 }
 
 /* LOGOTIPO */
@@ -127,6 +128,77 @@ a.active, a:hover {
         left: 0;
     }
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    padding: 30px 10px 10px 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 20px;
+    border: 2px solid black;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+.container .card img {
+    width: 140px;
+    transition: 0.5s;
+    padding-bottom: 10px;
+}
+.container .card h1 {
+    font-size: 2rem;
+}
+.container .card .content {
+    padding: 12px;
+    text-align: center;
+}
+.container .card .content p {
+    color: #666;
+    transition: 0.5s;
+}
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.container .card:hover{
+    background-color: #292626;
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px rgb(46, 131, 243);
+    border-color: rgb(53, 138, 250);
+}
+.container .card:hover img{
+    filter: invert(1);
+}
+.container .card:hover .content p{
+    color: white;
+    font-weight: bold;
+}
+.container .card:hover .content a{
+    color: white;
+    background-color: rgb(37, 121, 231);
+    font-weight: bold;
+}
 
     </style>
 </head>
@@ -145,49 +217,54 @@ a.active, a:hover {
         </ul>
     </nav>
 
-    <div class="container">
-        <!-- PRIMEIRO CARD -->
-        <div class="card">
-            <div class="img">
-                <img src="../assets/img.article/fl-html.png" alt="imagem de html">
+    <main>
+        <div class="container">
+            <!-- PRIMEIRO CARD -->
+            <div class="card">
+                <div class="img">
+                    <img src="../assets/img.article/html.ptb.png" alt="imagem de html">
+                </div>
+                <h1>Html-5</h1>
+                <div class="content">
+                    <p>
+                        Aqui você encontrará referências completas sobre elementos HTML, atributos, eventos, nomes de cores, entidades, mensagens HTTP, suporte a navegadores e muito mais.
+                    </p>
+                    <a href="https://www.w3schools.com/html/">Leia Mais</a>
+                </div>
             </div>
-            <h1>Html-5</h1>
-            <div class="content">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum libero molestias quod tempore. Sit ab dolore soluta ad quidem, id harum. Nostrum distinctio numquam non accusantium? Eius aut consequuntur adipisci.
-                </p>
-                <a href="https://www.w3schools.com/html/">Leia Mais</a>
+    
+            <!-- SEGUNDO CARD -->
+            <div class="card">
+                <div class="img">
+                    <img src="../assets/img.article/css.ptb.png" alt="imagem de CSS-3">
+                </div>
+                <h1>CSS-3</h1>
+                <div class="content">
+                    <p>
+                        No W3Schools você encontrará referências CSS completas de todas as propriedades e seletores com sintaxe, exemplos, suporte ao navegador CSS Pseudoclasses, menu susprnsos e muito mais.
+                    </p>
+                    <a href="https://www.w3schools.com/css/">Leia Mais</a>
+                </div>
+            </div>
+    
+             <!-- TERCEIRO CARD -->
+             <div class="card">
+                <div class="img">
+                    <img src="../assets/img.article/js.ptb.png" alt="imagem de Javascript">
+                </div>
+                <h1>Javascript</h1>
+                <div class="content">
+                    <p>
+                        O W3Schools mantém uma referência JavaScript completa para o seu aprendizado. Essa referência é continuamente atualizada de acordo com os padrões da web mais recentes.
+                    </p>
+                    <a href="https://www.w3schools.com/js/">Leia Mais</a>
+                </div>
             </div>
         </div>
 
-        <!-- SEGUNDO CARD -->
-        <div class="card">
-            <div class="img">
-                <img src="../assets/img.article/fl-css.png" alt="imagem de CSS-3">
-            </div>
-            <h1>CSS-3</h1>
-            <div class="content">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum libero molestias quod tempore. Sit ab dolore soluta ad quidem, id harum. Nostrum distinctio numquam non accusantium? Eius aut consequuntur adipisci.
-                </p>
-                <a href="https://www.w3schools.com/css/">Leia Mais</a>
-            </div>
-        </div>
+    </main>
 
-         <!-- TERCEIRO CARD -->
-         <div class="card">
-            <div class="img">
-                <img src="../assets/img.article/fl-js.png" alt="imagem de Javascript">
-            </div>
-            <h1>Javascript</h1>
-            <div class="content">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum libero molestias quod tempore. Sit ab dolore soluta ad quidem, id harum. Nostrum distinctio numquam non accusantium? Eius aut consequuntur adipisci.
-                </p>
-                <a href="https://www.w3schools.com/js/">Leia Mais</a>
-            </div>
-        </div>
-    </div>
+   
 
 </body>
 </html>
